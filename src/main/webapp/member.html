@@ -7,24 +7,54 @@
 <body>
     <h3>회원 정보</h3>
     <form action="queryTest" method="post">
-        ID : <input type="text" name="id"/><br>
-        비밀번호 : <input type="password" name="pwd"/><br>
-        이름 : <input type="text" name="name"/><br>
+        <label>
+            ID :
+            <input type="text" name="id"/>
+        </label><br>
+        <label>
+            비밀번호 :
+            <input type="password" name="pwd"/>
+        </label><br>
+        <label>
+            이름 :
+            <input type="text" name="name"/>
+        </label><br>
         취미 :
-            <input type="checkbox" name="hobby" value="climbing"/>등산
-            <input type="checkbox" name="hobby" value="sports"/>운동
-            <input type="checkbox" name="hobby" value="reading"/>독서
-            <input type="checkbox" name="hobby" value="traveling"/>여행 <br>
+        <label>
+            <input type="checkbox" name="hobby" value="climbing"/>
+            등산
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="sports"/>
+            운동
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="reading"/>
+            독서
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="traveling"/>
+            여행
+        </label>여행 <br>
         성별 :
-            <input type="radio" name="gender" value="male"/>남자
-            <input type="radio" name="gender" value="female"/>여자 <br>
+        <label>
+            <input type="radio" name="gender" value="male"/>
+            남자
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"/>
+            여자
+        </label>여자 <br>
         종교 :
+        <label>
             <select name="religion">
                 <option value="Christianity">기독교</option>
                 <option value="Buddhism">불교</option>
                 <option value="Catholicism">천주교</option>
                 <option value="atheism">무교</option>
-            </select> <br>
+            </select>
+
+        </label> <br>
         <input type="submit" value="전송"/>
         <input type="reset" value="지우기"/>
     </form>
