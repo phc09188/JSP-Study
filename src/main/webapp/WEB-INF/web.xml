@@ -3,4 +3,37 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+<!--    InitParamServlet 예제를 위한 xml 설정-->
+    <servlet>
+        <servlet-name>initParamTest</servlet-name>
+        <servlet-class>com.example.jsptest.chapter5.InitParamServlet</servlet-class>
+        <init-param>
+            <param-name>id</param-name>
+            <param-value>guest</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>1004</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>initParamTest</servlet-name>
+        <url-pattern>/initParamTest</url-pattern>
+    </servlet-mapping>
+    <!--    ServletConfigTestServlet 예제를 위한 xml 설정-->
+    <servlet>
+        <servlet-name>servletConfigTest</servlet-name>
+        <servlet-class>com.example.jsptest.chapter5.ServletConfigTestServlet</servlet-class>
+        <init-param>
+            <param-name>charset</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletConfigTest</servlet-name>
+        <url-pattern>/servletConfigTest</url-pattern>
+    </servlet-mapping>
+
 </web-app>
