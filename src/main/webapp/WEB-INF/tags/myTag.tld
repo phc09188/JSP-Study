@@ -8,5 +8,11 @@
     <tag>
         <name>first</name>
         <tag-class>com.example.jsptest.chapter13.MyCustomTag</tag-class>
+        <tei-class>com.example.jsptest.chapter13.MyCustomTagTEI</tei-class>
+        <attribute>
+            <name>color</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
     </tag>
 </taglib>

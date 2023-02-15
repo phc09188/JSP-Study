@@ -66,7 +66,7 @@
     <jsp-config>
         <taglib>
             <taglib-uri>http://myTags.com</taglib-uri>
-            <taglib-location>/WEB-INF/myTag.tld</taglib-location>
+            <taglib-location>/WEB-INF/tags/myTag.tld</taglib-location>
         </taglib>
     </jsp-config>
 
