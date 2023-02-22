@@ -1,0 +1,27 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: itman
+  Date: 2023-02-22
+  Time: 오후 3:29
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>검색 결과</title>
+</head>
+<body>
+<h3> 검색 결과 </h3>
+<%
+  String result = (String) request.getAttribute("result");
+  if(result!= null){
+    out.print(result + "<p>");
+  }else{
+%>
+<h3>
+  ${member.id} / ${member.passwd} / ${member.name} / ${member.mail} }
+</h3>
+<%}%>
+<%@ include file="home.jsp"%>
+</body>
+</html>
